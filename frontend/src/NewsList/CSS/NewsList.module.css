@@ -1,0 +1,82 @@
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.searchBar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.input {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.newsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.newsCard {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 15px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.newsCard:hover {
+    transform: scale(1.02);
+}
+
+.image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.newsTitle {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.date {
+    color: gray;
+    font-size: 14px;
+}
+
+.summary {
+    font-size: 14px;
+    color: #666;
+}
+
+.button {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: darkgreen;
+}

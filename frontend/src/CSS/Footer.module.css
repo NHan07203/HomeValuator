@@ -1,0 +1,112 @@
+.footerContainer {
+    background: #f9f9f9;
+    border: 1px solid #000;
+    padding: 40px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footerContent {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .subscription {
+    max-width: 300px;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    width: 6    0px;
+  }
+  
+  .subscribeForm {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .subscribeForm input {
+    padding: 10px;
+    flex: 1;
+    border: 1px solid #000;
+  }
+  
+  .subscribeForm button {
+    padding: 10px 15px;
+    background: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .privacyNote {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  
+  .footerLinks {
+    display: flex;
+    gap: 50px;
+  }
+  
+  .footerLinks h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .footerLinks ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footerLinks li {
+    margin: 5px 0;
+  }
+  
+  .footerLinks a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .socialMedia h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .socialMedia ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .socialMedia li {
+    margin: 5px 0;
+  }
+  
+  .socialMedia a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .footerBottom {
+    border-top: 1px solid #000;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  .footerBottom div{
+    margin-top: 16px;
+  }
+  
+  .footerBottom a {
+    text-decoration: none;
+    color: #000;
+    margin-left: 10px;
+  }
+  

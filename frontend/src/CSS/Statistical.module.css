@@ -1,0 +1,77 @@
+.statisticalContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  /* Ảnh bên trái */
+  .imageContainer {
+    flex: 1;
+  }
+  
+  .statisticalImage {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+  }
+  
+  /* Nội dung bên phải */
+  .contentContainer {
+    flex: 1;
+  }
+  
+  .statisticalTitle {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .statisticalText {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  /* Thông số */
+  .statisticalGrid {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .statisticalBox {
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .statisticalBox h2 {
+    font-size: 28px;
+    color: #b23135;
+  }
+  
+  .statisticalBox p {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .statisticalIcon {
+    font-size: 40px;
+    color: #b23135;
+    margin-bottom: 10px;
+  }
+  
+  /* Cảm nhận khách hàng */
+  .customerReview {
+    font-size: 14px;
+    color: #444;
+    font-style: italic;
+    margin-top: 20px;
+  }
+  

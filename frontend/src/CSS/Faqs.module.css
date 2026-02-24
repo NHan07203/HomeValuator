@@ -1,0 +1,75 @@
+.faqContainer {
+    width: 98%;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .faqTitle {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .faqIntro {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .faqItem {
+    padding: 15px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .faqItem:hover {
+    background: #f9f9f9;
+  }
+  
+  .faqHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .faqQuestion {
+    font-size: 18px;
+  }
+  
+  .faqAnswer {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #444;
+  }
+  
+  .faqIcon {
+    font-size: 16px;
+    transition: transform 0.3s ease;
+  }
+  
+  .faqIcon.open {
+    transform: rotate(180deg);
+  }
+  
+  .faqDivider {
+    border: none;
+    height: 1px;
+    background: #ddd;
+    margin: 10px 0;
+  }
+  
+  .contactSection {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .contactTitle {
+    font-size: 22px;
+    font-weight: bold;
+  }
+  
+  .contactText {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  

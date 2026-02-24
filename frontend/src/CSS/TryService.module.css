@@ -1,0 +1,77 @@
+.tryService {
+    background-image: url("../../public/img/realEstate.jpg"); /* Đảm bảo đường dẫn hợp lệ */
+    background-size: cover;  /* Phủ toàn bộ */
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    text-align: start;
+    padding: 20px 80px;
+    overflow: hidden; 
+}
+
+.tryService::before {
+    content: "";
+    position: absolute;
+    top: 180rem;
+    left: 0;
+    width: 100%;
+    height: 58vh;
+    background: rgba(0, 0, 0, 0.5); /* Lớp phủ đen với độ mờ 50% */
+    backdrop-filter: blur(5px); /* Làm mờ nền */
+    z-index: 1; /* Đặt lớp phủ trên hình nền nhưng dưới nội dung */
+}
+
+/* Đảm bảo nội dung không bị ảnh hưởng bởi lớp phủ */
+.tryService > * {
+    position: relative;
+    z-index: 2;
+}
+
+/* Tiêu đề */
+.tryService h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Nội dung mô tả */
+.tryService p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+/* Container chứa nút */
+.tryService div {
+    display: flex;
+    gap: 15px;
+}
+/* Responsive cho màn hình nhỏ */
+@media (max-width: 768px) {
+    .tryService {
+        height: auto;
+        padding: 30px 15px;
+    }
+
+    .tryService h2 {
+        font-size: 1.8rem;
+    }
+
+    .tryService p {
+        font-size: 1rem;
+    }
+
+    .tryService div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tryService button {
+        width: 100%;
+    }
+}

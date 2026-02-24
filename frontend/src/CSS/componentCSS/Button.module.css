@@ -1,0 +1,16 @@
+.button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    background-color: var(--btn-bg, transparent); /* Màu mặc định */
+    border: 2px solid var(--btn-border, #B23135); /* Viền mặc định */
+    color: var(--btn-color, #fff); /* Màu chữ mặc định */
+}
+
+.button:hover {
+    opacity: 0.8;
+}

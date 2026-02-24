@@ -1,0 +1,172 @@
+/* Toàn bộ container chính */
+.container {
+  position: relative;
+  width: 800px;
+  height: 450px;
+  margin: 50px auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Khu vực chứa tất cả form (trượt được) */
+.formWrapper {
+  display: flex;
+  width: 200%;
+  /* Chứa 4 form */
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Khi active, trượt toàn bộ sang trái */
+.rightPanelActive .formWrapper {
+  transform: translateX(-50%);
+}
+
+/* Mỗi form chiếm 50% */
+.formContainer {
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  backdrop-filter: blur(5px);
+}
+
+.formContainer1 {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  color: white;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(1px);
+}
+
+/* Ẩn phần không hiển thị */
+.wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Form input */
+input {
+  width: 80%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Nút bấm */
+.button {
+  width: 85%;
+  padding: 10px;
+  border: none;
+  background: #c0392b;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background: #a93226;
+}
+
+.formContainer1 .button {
+  width: 40%;
+  border: 2px solid #a93226;
+  background: rgba(255, 255, 255, 0.5);
+  color: black;
+  font-size: 16px;
+  border-radius: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.formContainer1 .button:hover {
+  color: #fff;
+  background: #a93226;
+}
+
+.formContainer1 h2,
+.formContainer1 p {
+  width: 60%;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.formContainer1 h2 {
+  font-size: 32px;
+}
+
+/* Background chính (ảnh nền bao phủ tất cả) */
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("../../../public/img/auth.jpg") center/cover;
+  z-index: -1;
+  filter: brightness(0.8);
+}
+
+.rememberMe {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 5px;
+  margin: 10px 0 10px 3rem;
+  font-size: 14px;
+}
+
+.rememberMe input {
+  cursor: pointer;
+  width: 20px;
+}
+
+.socialLogin {
+  display: flex;
+  justify-content: start;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.socialLogin i {
+  font-size: 20px;
+  color: #333;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.socialLogin i:hover {
+  color: #c0392b;
+}
+
+@media screen and (max-width: 768px) {
+  .formWrapper {
+    width: 50%;
+    flex-direction: column;
+  }
+
+  .formContainer {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .button {
+    width: 30%;
+  }
+
+  .formContainer1 {
+    display: none; /* Ẩn phần khám phá trên mobile */
+  }
+}

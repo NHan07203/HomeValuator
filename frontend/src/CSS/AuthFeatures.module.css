@@ -1,0 +1,187 @@
+.authMain {
+    min-height: 80vh;
+    padding: 6rem 2rem;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Thêm class để đảo ngược vị trí ảnh */
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.left {
+    flex: 1;
+    max-width: 600px;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.left:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.left h2 {
+    font-size: clamp(2rem, 4vw, 2.5rem);
+    color: #2d3436;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    position: relative;
+}
+
+.left h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 60px;
+    height: 4px;
+    background: #B23135;
+    border-radius: 2px;
+}
+
+.left p, .left b {
+    font-size: clamp(1rem, 2vw, 1.15rem);
+    color: #4a4a4a;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+/* Tùy chỉnh layout của tính năng */
+.feature {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.feature:hover {
+    background: rgba(255, 255, 255, 0.8);
+    transform: translateX(10px);
+}
+
+/* Grid layout: Các tính năng trên cùng 1 hàng */
+.grid {
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Chia cột linh hoạt */
+    gap: 1.5rem; /* Khoảng cách giữa các phần tử */
+    justify-items: center; /* Căn giữa nội dung */
+    align-items: stretch; /* Căn chỉnh chiều cao */
+}
+
+.grid-item {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.grid-item:hover {
+    transform: translateY(-5px);
+}
+
+
+/* Column layout: Các tính năng xếp dọc */
+.column {
+    flex-direction: column;
+}
+
+.feature p,b {
+    max-width: 92%;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.right {
+    flex: 1;
+    height: 70vh;
+    max-width: 50%;
+    position: relative;
+}
+
+.right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .authMain {
+        flex-direction: column;
+        padding: 4rem 1.5rem;
+    }
+
+    .left {
+        max-width: 100%;
+        padding: 1.5rem;
+    }
+
+    .right {
+        max-width: 100%;
+        height: 50vh;
+        order: -1;
+    }
+
+    .feature {
+        padding: 1rem;
+        margin-top: 1.5rem;
+    }
+
+    .grid > div {
+        flex: 1 1 100%; /* Trên màn hình nhỏ, hiển thị 1 cột */
+    }
+}
+
+@media (max-width: 768px) {
+    .authMain {
+        padding: 3rem 1rem;
+    }
+
+    .feature {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .feature p {
+        max-width: 100%;
+    }
+
+    .right {
+        height: 40vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .left {
+        padding: 1rem;
+    }
+
+    .right {
+        height: 30vh;
+    }
+}
+
+/* Add smooth scrolling to the whole page */
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
+}

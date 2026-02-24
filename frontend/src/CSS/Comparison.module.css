@@ -1,0 +1,93 @@
+/* Container chính */
+.comparisonContainer {
+    width: 90%;
+    margin: auto;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  /* Tiêu đề */
+  .welcomeText {
+    font-size: 26px;
+    font-weight: bold;
+    color: #b23135;
+    margin-bottom: 10px;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .subtitle {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  /* Bảng so sánh hiện đại */
+  .tableContainer {
+    overflow-x: auto;
+    margin-top: 20px;
+  }
+  
+  .comparisonTable {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .comparisonTable thead {
+    background: linear-gradient(to right, #b23135, #901f29);
+    color: white;
+  }
+  
+  .comparisonTable th, 
+  .comparisonTable td {
+    padding: 14px;
+    text-align: center;
+    font-size: 16px;
+  }
+  
+  .comparisonTable th {
+    font-weight: bold;
+  }
+  
+  .comparisonTable tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+  }
+  
+  .comparisonTable tbody tr:nth-child(even) {
+    background-color: #ffffff;
+  }
+  
+  .comparisonTable tbody tr:hover {
+    background-color: #f1f1f1;
+    transition: 0.3s;
+  }
+  
+  /* Nút hành động */
+  .buttonContainer {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    .comparisonTable {
+      font-size: 14px;
+    }
+  
+    .buttonContainer {
+      flex-direction: column;
+    }
+  }
+  
