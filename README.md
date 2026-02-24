@@ -14,10 +14,9 @@ Dự án được xây dựng với mục tiêu:
 
 ## Kiến trúc hệ thống
 
-Frontend (ReactJS)
-↓
+Frontend (ReactJS) ->
 REST API (Flask)
-↓
+->
 Machine Learning Model (Stacking)
 
 ---
